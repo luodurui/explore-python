@@ -4,7 +4,7 @@
 
 # 本地环境
 
-![本地环境](/Users/steven/Library/Application Support/typora-user-images/image-20200327164258380.png)
+![本地环境](https://github.com/luodurui/explore-python/blob/master/images/image-20200327164258380.png)
 
 # 任务准备
 
@@ -12,7 +12,7 @@
 
 由于 Python 2 与 Python 3 之间差异较大，而 Mac 自带 Python 2.xx 版本。为了避免由于 Python 版本导致的问题，需要在开始前检本地的 Python 版本，具体步骤如下：
 
-![查看 Python 版本](/Users/steven/Library/Application Support/typora-user-images/image-20200326165358851.png)
+![查看 Python 版本](https://github.com/luodurui/explore-python/blob/master/images/image-20200326165358851.png)
 
 可看到 Python 版本为 2.7.16。此处我们决定安装 Python 3 来完成此次任务。
 
@@ -28,11 +28,11 @@ python3
 
 
 
-![检查 Python3](/Users/steven/Library/Application Support/typora-user-images/image-20200326170311408.png)
+![检查 Python3](https://github.com/luodurui/explore-python/blob/master/images/image-20200326170311408.png)
 
 系统提示需要安装命令行开发者工具，点击` 安装 `
 
-![安装命令行开发者工具](/Users/steven/Library/Application Support/typora-user-images/image-20200326170435487.png)
+![安装命令行开发者工具](https://github.com/luodurui/explore-python/blob/master/images/image-20200326170435487.png)
 
 安装完成后再度在终端中输入` python3 `，系统提示已安装了版本为 3.7.3 的 Python。
 
@@ -72,7 +72,7 @@ python3 -m venv venv
 
 创建完成后，项目文件夹中会有一个 ` venv ` 文件夹：
 
-![创建虚拟环境](/Users/steven/Library/Application Support/typora-user-images/image-20200326174620117.png)
+![创建虚拟环境](https://github.com/luodurui/explore-python/blob/master/images/image-20200326174620117.png)
 
 ### 2. 激活虚拟环境
 
@@ -90,7 +90,7 @@ python3 -m venv venv
 pip install Flask
 ```
 
-![安装 Flask 报错](/Users/steven/Library/Application Support/typora-user-images/image-20200327102405141.png)
+![安装 Flask 报错](https://github.com/luodurui/explore-python/blob/master/images/image-20200327102405141.png)
 
 报错中提示 ` HTTPSConnectionPool: Read timed out ` ，应该是连接超时导致的下载失败。但超时的原因还看不出来。可能是 pip install 的超时时间过短、网络拥堵、wall等，导致超时时间内无法下载到任何数据。解决方法有两种：1.增加超时时间（不推荐）；2.更换源。
 
@@ -100,7 +100,7 @@ pip install Flask
 pip --default-timeout=600 install
 ```
 
-![调整超时时间](/Users/steven/Library/Application Support/typora-user-images/image-20200327171632096.png)
+![调整超时时间](https://github.com/luodurui/explore-python/blob/master/images/image-20200327171632096.png)
 
 另外，可通过更换源的方式改善下载情况。运行以下命令以使用腾讯云 pypi 软件源：
 
@@ -108,7 +108,7 @@ pip --default-timeout=600 install
 pip install -i https://mirrors.cloud.tencent.com/pypi/simple Flask
 ```
 
-![更换源后下载](/Users/steven/Library/Application Support/typora-user-images/image-20200327125645103.png)
+![更换源后下载](https://github.com/luodurui/explore-python/blob/master/images/image-20200327125645103.png)
 
 ### 4. 开始编码
 
@@ -138,11 +138,11 @@ expert FLASK_APP=web_coding.py
 flask run
 ```
 
-![flask run](/Users/steven/Library/Application Support/typora-user-images/image-20200327130550410.png)
+![flask run](https://github.com/luodurui/explore-python/blob/master/images/image-20200327130550410.png)
 
 程序已经开始运行，浏览器访问：
 
-![浏览器访问](/Users/steven/Library/Application Support/typora-user-images/image-20200327130703347.png)
+![浏览器访问](https://github.com/luodurui/explore-python/blob/master/images/image-20200327130703347.png)
 
 ### 6. 修改端口
 
@@ -153,11 +153,11 @@ flask run
 flask run -p 8080
 ```
 
-![修改运行端口](/Users/steven/Library/Application Support/typora-user-images/image-20200327130935142.png)
+![修改运行端口](https://github.com/luodurui/explore-python/blob/master/images/image-20200327130935142.png)
 
 浏览器中访问：
 
-![更新端口后访问](/Users/steven/Library/Application Support/typora-user-images/image-20200327131208882.png)
+![更新端口后访问](https://github.com/luodurui/explore-python/blob/master/images/image-20200327131208882.png)
 
 反思
 
