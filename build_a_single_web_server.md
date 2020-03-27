@@ -97,7 +97,7 @@ pip install Flask
 在终端中输入 ` pip --help ` 查看到默认超时时间为15s，可使用如下命令修改默认超时时间（不推荐）：
 
 ```bash
-pip --default-timeout=600 install
+pip --default-timeout=600 install Flask
 ```
 
 ![调整超时时间](https://github.com/luodurui/explore-python/blob/master/images/image-20200327171632096.png)
@@ -140,30 +140,4 @@ flask run
 
 ![flask run](https://github.com/luodurui/explore-python/blob/master/images/image-20200327130550410.png)
 
-程序已经开始运行，浏览器访问：
-
-![浏览器访问](https://github.com/luodurui/explore-python/blob/master/images/image-20200327130703347.png)
-
-### 6. 修改端口
-
-而任务要求程序运行在 local:8080，我们则需要指定程序运行的端口：
-
-```bash
-^C%    //先把进程停掉
-flask run -p 8080
-```
-
-![修改运行端口](https://github.com/luodurui/explore-python/blob/master/images/image-20200327130935142.png)
-
-浏览器中访问：
-
-![更新端口后访问](https://github.com/luodurui/explore-python/blob/master/images/image-20200327131208882.png)
-
-反思
-
-由于国内网络环境的复杂，下载包时常会导致超时。这时选择合适的源进行替换是个不错的方法。本次任务参考的源：
-
-[腾讯软件源](http://mirrors.tencent.com/#/index)
-
-[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
-
+程序已经
